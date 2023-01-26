@@ -1,6 +1,7 @@
 import React from 'react'
+
+import { BsStar, BsStarFill, BsStarHalf } from 'react-icons/bs'
 import styled from 'styled-components'
-import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs'
 
 const Stars = ({ stars, reviews }) => {
   const tempStars = Array.from({ length: 5 }, (_, index) => {

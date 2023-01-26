@@ -1,18 +1,21 @@
-import React, { useState, useEffect } from 'react'
-import styled from 'styled-components'
-import { loadStripe } from '@stripe/stripe-js'
+import React, { useEffect, useState } from 'react'
+import { useHistory } from 'react-router-dom'
+
 import {
   CardElement,
-  useStripe,
   Elements,
-  useElements
+  useElements,
+  useStripe
 } from '@stripe/react-stripe-js'
+import { loadStripe } from '@stripe/stripe-js'
+import { clear } from '@testing-library/user-event/dist/clear'
 import axios from 'axios'
+import styled from 'styled-components'
+
 import { useCartContext } from '../context/cart_context'
 import { useUserContext } from '../context/user_context'
+
 import { formatPrice } from '../utils/helpers'
-import { useHistory } from 'react-router-dom'
-import { clear } from '@testing-library/user-event/dist/clear'
 
 const promise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY)
 

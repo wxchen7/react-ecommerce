@@ -1,17 +1,17 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 
-import { Navbar, Sidebar, Footer } from './components'
+import { Footer, Navbar, Sidebar } from './components'
 import {
-  Home,
   About,
+  AuthWrapper,
   Cart,
-  Products,
-  SingleProduct,
   Checkout,
   Error,
+  Home,
   PrivateRoute,
-  AuthWrapper
+  Products,
+  SingleProduct
 } from './pages'
 
 function App() {

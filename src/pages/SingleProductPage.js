@@ -1,19 +1,21 @@
 import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { useParams, useHistory } from 'react-router-dom'
+import { Link, useHistory, useParams } from 'react-router-dom'
+
 import styled from 'styled-components'
 
+import {
+  AddToCart,
+  Error,
+  Loading,
+  PageHero,
+  ProductImages,
+  Stars
+} from '../components'
+
 import { useProductsContext } from '../context/products_context'
+
 import { single_product_url as url } from '../utils/constants'
 import { formatPrice } from '../utils/helpers'
-import {
-  Loading,
-  Error,
-  ProductImages,
-  AddToCart,
-  Stars,
-  PageHero
-} from '../components'
 
 const SingleProductPage = () => {
   const { id } = useParams()

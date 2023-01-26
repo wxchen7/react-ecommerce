@@ -1,8 +1,9 @@
 import React from 'react'
+
+import aboutImg from '../assets/hero-bcg.jpeg'
 import styled from 'styled-components'
 
 import { PageHero } from '../components'
-import aboutImg from '../assets/hero-bcg.jpeg'
 
 const AboutPage = () => {
   return (

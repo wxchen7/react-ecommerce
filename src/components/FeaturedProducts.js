@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 import styled from 'styled-components'
 
 import { useProductsContext } from '../context/products_context'
+
 import Error from './Error'
 import Loading from './Loading'
 import Product from './Product'

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { FeaturedProducts, Hero, Services, Contact } from '../components'
+import { Contact, FeaturedProducts, Hero, Services } from '../components'
 
 const HomePage = () => {
   return (

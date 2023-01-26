@@ -1,12 +1,12 @@
 import {
+  CLEAR_FILTERS,
+  FILTER_PRODUCTS,
   LOAD_PRODUCTS,
-  SET_LISTVIEW,
   SET_GRIDVIEW,
-  UPDATE_SORT,
+  SET_LISTVIEW,
   SORT_PRODUCTS,
   UPDATE_FILTERS,
-  FILTER_PRODUCTS,
-  CLEAR_FILTERS
+  UPDATE_SORT
 } from '../actions'
 
 const filter_reducer = (state, action) => {

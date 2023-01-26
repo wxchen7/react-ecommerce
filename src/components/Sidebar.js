@@ -1,13 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import styled from 'styled-components'
 
 import logo from '../assets/logo.svg'
 import { FaTimes } from 'react-icons/fa'
-import { links } from '../utils/constants'
-import CartButtons from './CartButtons'
+import styled from 'styled-components'
+
 import { useProductsContext } from '../context/products_context'
 import { useUserContext } from '../context/user_context'
+
+import { links } from '../utils/constants'
+
+import CartButtons from './CartButtons'
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useProductsContext()

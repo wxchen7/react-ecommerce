@@ -3,5 +3,15 @@
   "tabWidth": 2,
   "semi": false,
   "singleQuote": true,
-  "jsxSingleQuote": true
+  "jsxSingleQuote": true,
+  "importOrder": [
+    "^react-router-dom$|^react-dom|^react$",
+    "^@testing-library|^@stripe|^@auth0|^axios|/assets/|^react-icons|css$|^styled",
+    "components$|pages$",
+    "context$|reducer$",
+    "actions$|/utils/",
+    "^./"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }

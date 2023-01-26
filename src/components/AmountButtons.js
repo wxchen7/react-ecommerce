@@ -1,6 +1,7 @@
 import React from 'react'
+
+import { FaMinus, FaPlus } from 'react-icons/fa'
 import styled from 'styled-components'
-import { FaPlus, FaMinus } from 'react-icons/fa'
 
 const AmountButtons = ({ increase, decrease, amount }) => {
   return (
